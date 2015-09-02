@@ -1,0 +1,10 @@
+package com.dprince.jersey.template;
+
+import org.glassfish.jersey.server.ResourceConfig;
+
+public class JerseyApplication extends ResourceConfig {
+    public JerseyApplication() {
+    	System.out.println("Launching JErsey Application");
+        packages(" com.dprince.jersey.template.endpoints");
+    }
+}

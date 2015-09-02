@@ -1,0 +1,16 @@
+package com.dprince.jersey.template;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.QueryParam;
+
+@Path("/")
+public class JerseyTemplate {
+	
+	@GET
+	@Path("template")
+	public String getParam(@QueryParam("input") String input){
+		
+		return input;
+	}
+}

@@ -1,0 +1,7 @@
+package com.dprince.jersey.template;
+
+public class JerseyApplication extends ResourceConfig {
+    public MyApplication() {
+        packages("org.foo.rest;org.bar.rest");
+    }
+}
